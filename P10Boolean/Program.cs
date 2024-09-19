@@ -6,12 +6,13 @@
 Console.WriteLine("What is your age?");
 
 string Question = Console.ReadLine();
+//Loop
 while (!int.TryParse(Question, out int result))
 {
   Console.WriteLine("Write a number please!");
   Question = Console.ReadLine();
 }
-    
+//loop-Break
 float Answer = float.Parse(Question);
 
 float decimalNumber = Answer;
